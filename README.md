@@ -5,7 +5,7 @@ Personal Homebrew tap for `oldwinter` CLI tools.
 ## Install
 
 ```bash
-brew tap oldwinter/homebrew
+brew tap oldwinter/homebrew https://github.com/oldwinter/homebrew
 brew install --HEAD oldwinter/homebrew/oldwinter-hello
 oldwinter-hello --version
 ```
