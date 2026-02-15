@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+VERSION="0.2.0"
+
+print_help() {
+  cat <<'HELP'
+oldwinter-greet: a simple greeting CLI
+
+Usage:
+  oldwinter-greet [name...]
+  oldwinter-greet --json [name...]
+  oldwinter-greet --version
+  oldwinter-greet --help
+HELP
+}
+
+as_json=false
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --version|-v)
+      echo "${VERSION}"
+      exit 0
+      ;;
+    --help|-h)
+      print_help
+      exit 0
+      ;;
+    --json)
+      as_json=true
+      shift
+      break
+      ;;
+    --)
+      shift
+      break
+      ;;
+    -*)
+      echo "unknown option: $1" >&2
+      exit 1
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
+name="${*:-friend}"
+message="Hi, ${name}!"
+
+if [[ "${as_json}" == "true" ]]; then
+  printf '{"tool":"oldwinter-greet","version":"%s","message":"%s"}\n' "${VERSION}" "${message}"
+else
+  echo "${message}"
+fi
