@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+VERSION="0.1.0"
+
+if [[ "${1:-}" == "--version" || "${1:-}" == "-v" ]]; then
+  echo "${VERSION}"
+  exit 0
+fi
+
+if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
+  cat <<'EOF'
+oldwinter-hello: a demo CLI from oldwinter/homebrew tap
+
+Usage:
+  oldwinter-hello [name...]
+  oldwinter-hello --version
+  oldwinter-hello --help
+EOF
+  exit 0
+fi
+
+if [[ $# -gt 0 ]]; then
+  echo "Hello, $*!"
+else
+  echo "Hello from oldwinter Homebrew tap!"
+fi
