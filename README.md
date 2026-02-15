@@ -6,7 +6,7 @@ Personal Homebrew tap for `oldwinter` CLI tools.
 
 ```bash
 brew tap oldwinter/homebrew https://github.com/oldwinter/homebrew
-brew install --HEAD oldwinter/homebrew/oldwinter-hello
+brew install oldwinter/homebrew/oldwinter-hello
 oldwinter-hello --version
 ```
 
@@ -14,7 +14,8 @@ oldwinter-hello --version
 
 - `oldwinter-hello`: Demo CLI used to validate this tap setup.
 
-## Promote to Stable (optional)
+To install the latest development version, use:
 
-To provide a stable install without `--HEAD`, add a GitHub release tarball URL and `sha256`
-to the formula.
+```bash
+brew install --HEAD oldwinter/homebrew/oldwinter-hello
+```
