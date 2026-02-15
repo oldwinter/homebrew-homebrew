@@ -1,26 +1,26 @@
-# oldwinter/homebrew
+# oldwinter/tap
 
 Personal Homebrew tap for `oldwinter` CLI tools.
 
 ## Install
 
 ```bash
-brew tap oldwinter/homebrew
-brew install oldwinter/homebrew/oldwinter-hello
+brew tap oldwinter/tap
+brew install oldwinter/tap/oldwinter-hello
 oldwinter-hello --version
 ```
 
 For the new CLI:
 
 ```bash
-brew install oldwinter/homebrew/oldwinter-greet
+brew install oldwinter/tap/oldwinter-greet
 oldwinter-greet codex
 ```
 
 Install the cask variant:
 
 ```bash
-brew install --cask oldwinter/homebrew/oldwinter-greet
+brew install --cask oldwinter/tap/oldwinter-greet
 oldwinter-greet --version
 ```
 
@@ -32,5 +32,5 @@ oldwinter-greet --version
 To install the latest development version, use:
 
 ```bash
-brew install --HEAD oldwinter/homebrew/oldwinter-hello
+brew install --HEAD oldwinter/tap/oldwinter-hello
 ```
