@@ -1,9 +1,9 @@
 class OldwinterGreet < Formula
   desc "Simple greeting CLI for oldwinter"
-  homepage "https://github.com/oldwinter/homebrew"
-  url "https://github.com/oldwinter/homebrew/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "6e7c047c7fbc670bf3d9dd9f02a03d75642cb0fe92ad3b2d68b8e655d03e644a"
-  head "https://github.com/oldwinter/homebrew.git", branch: "main"
+  homepage "https://github.com/oldwinter/homebrew-homebrew"
+  url "https://github.com/oldwinter/homebrew-homebrew/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "d757d148403c5608650bdd7e9de225c4a04c175e9a308c352a02eafa18c96d4a"
+  head "https://github.com/oldwinter/homebrew-homebrew.git", branch: "main"
   license "MIT"
 
   def install

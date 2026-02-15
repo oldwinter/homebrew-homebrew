@@ -5,7 +5,7 @@ Personal Homebrew tap for `oldwinter` CLI tools.
 ## Install
 
 ```bash
-brew tap oldwinter/homebrew https://github.com/oldwinter/homebrew
+brew tap oldwinter/homebrew
 brew install oldwinter/homebrew/oldwinter-hello
 oldwinter-hello --version
 ```
@@ -28,14 +28,6 @@ oldwinter-greet --version
 
 - `oldwinter-hello`: Demo CLI used to validate this tap setup.
 - `oldwinter-greet`: Greeting CLI with both formula and cask installation options.
-
-## Tap Naming Note
-
-Because this repository is named `homebrew` (not `homebrew-<tap-name>`), use an explicit URL:
-
-```bash
-brew tap oldwinter/homebrew https://github.com/oldwinter/homebrew
-```
 
 To install the latest development version, use:
 
